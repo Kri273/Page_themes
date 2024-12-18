@@ -1,8 +1,8 @@
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
   return (
     <header>
       <h1>Demo Website</h1>
-      <button>Toggle Theme</button>
+      <button onClick={toggleTheme}>Toggle Theme</button>
     </header>
   );
 };

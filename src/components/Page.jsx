@@ -1,9 +1,9 @@
 import Header from './Header';
 
-const Page = () => {
+const Page = ({ theme, toggleTheme }) => {
     return (
         <div id='app'>
-            <Header/>
+            <Header theme={theme} toggleTheme={toggleTheme}/>
 
             <article>
                 <h2>React Course</h2>
@@ -13,6 +13,6 @@ const Page = () => {
             </article>
         </div>
     );
-}
+};
 
 export default Page
